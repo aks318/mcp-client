@@ -1,0 +1,21 @@
+[project]
+name = "mcp-client"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Aakash", email = "akashviahwakarma98@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "fastmcp>=3.4.11",
+    "langchain>=1.4.9",
+    "langchain-mcp-adapters>=0.3.2",
+]
+
+[project.scripts]
+mcp-client = "mcp_client:main"
+
+[build-system]
+requires = ["uv_build>=0.13.7,<0.14.0"]
+build-backend = "uv_build"
